@@ -6,10 +6,7 @@ def load_library(file)
 # code goes here
 
 list = YAML.load_file(file)
-new_hash = {
-  "get_meaning" => {},
-  "get_emoticon" => {}
-}
+new_hash = {"get_meaning" => {},"get_emoticon" => {}}
 emoticons.each do |english, emoji|
   emoji.each do |x|
     hash["get_meaning"][x] = english
