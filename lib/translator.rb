@@ -30,15 +30,13 @@ def get_japanese_emoticon(filepath, emoticon)
 end
 
 
-def get_english_meaning(filepath, emoticon)
-  # code goes here
-  
-  new_hash = load_library(filepath)
-  #binding.pry
-  if new_hash["get_meaning"][emoticon] == nil
-    return "Sorry, that emoticon was not found"
-  else
-    new_ hash["get_meaning"][emoticon]
-  end
-end
 
+def get_english_meaning (filepath, emoticon)
+  # code goes here
+  new_hash = load_library(filepath)
+  translate_ = new_hash["get_meaning"][emoticon]
+  if translate_ == nil
+    return "Sorry, that emoticon was not found"
+  end
+  translate_
+end
