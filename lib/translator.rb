@@ -35,7 +35,7 @@ def get_english_meaning(filepath, emoticon)
   
   hash = load_library(filepath)
   #binding.pry
-  if hash["get_meaning"][emoticon] == nil
+  if new_hash["get_meaning"][emoticon] == nil
     return "Sorry, that emoticon was not found"
   else
     new_ hash["get_meaning"][emoticon]
