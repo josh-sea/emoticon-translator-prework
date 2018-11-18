@@ -2,10 +2,10 @@
 require "pry"
 require "yaml"
 
-def load_library(file)
+def load_library(filepath)
 # code goes here
 
-list = YAML.load_file(file)
+list = YAML.load_file(filepath)
 new_hash = {"get_meaning" => {},"get_emoticon" => {}}
 emoticons.each do |english, emoji|
   emoji.each do |x|
