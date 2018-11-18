@@ -16,7 +16,6 @@ emoticons.each do |english, emoji|
     hash["get_emoticon"][x] = emoji[1]
   end
 end
-hash
 end
 
 # def get_japanese_emoticon
