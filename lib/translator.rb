@@ -4,13 +4,12 @@ require "yaml"
 
 def load_library(filepath)
 # code goes here
-
   list = YAML.load_file(filepath)
   new_hash = {"get_meaning" => {},"get_emoticon" => {}}
   list.each do |english, emoticon|
     emoticon.each do |i|
-      hash["get_meaning"][i] = english
-      hash["get_emoticon"][i] = emoticon[1]
+      new_hash["get_meaning"][i] = english
+      new_hash["get_emoticon"][i] = emoticon[1]
     end
   end
   new_hash
