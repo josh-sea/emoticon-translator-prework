@@ -44,10 +44,10 @@ end
 
 def get_english_meaning(filepath, emoticon)
     # code goes here
-  hash = load_library(filepath)
-  if hash["get_meaning"][emoji] == nil
+  new_hash = load_library(filepath)
+  if new_hash["get_meaning"][emoticon] == nil
     "Sorry, that emoticon was not found"
   else
-    hash["get_meaning"][emoji]
+    new_hash["get_meaning"][emoticon]
   end
 end
