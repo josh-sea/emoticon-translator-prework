@@ -1,23 +1,9 @@
 # require modules here
-
-def load_library
-  # code goes here
-end
-
-def get_japanese_emoticon
-  # code goes here
-end
-
-def get_english_meaning
-  # code goes here
-end
-
-# require modules here
 require "pry"
 require "yaml"
- def load_library
+
+ def load_library(filepath)
   # code goes here
-def load_library(filepath)
   emoticons = YAML.load_file(filepath)
   hash = {
     "get_meaning" => {},
@@ -31,6 +17,17 @@ def load_library(filepath)
   end
   hash
 end
+
+def get_japanese_emoticon
+  # code goes here
+end
+
+def get_english_meaning
+  # code goes here
+end
+
+
+
  def get_japanese_emoticon
   # code goes here
 def get_japanese_emoticon(filepath, emoji)
