@@ -15,16 +15,16 @@ def load_library(filepath)
   new_hash
 end
 
-# def get_japanese_emoticon
-# # code goes here
-# def get_japanese_emoticon(filepath, emoji)
-# hash = load_library(filepath)
-# if hash["get_emoticon"][emoji] == nil
-#   "Sorry, that emoticon was not found"
-# else
-#   hash["get_emoticon"][emoji]
-# end
-# end
+def get_japanese_emoticon
+# code goes here
+def get_japanese_emoticon(filepath, emoji)
+hash = load_library(filepath)
+if hash["get_emoticon"][emoji] == nil
+  "Sorry, that emoticon was not found"
+else
+  hash["get_emoticon"][emoji]
+end
+end
 # def get_english_meaning
 # # code goes here
 # end 
