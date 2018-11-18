@@ -5,14 +5,14 @@ require "yaml"
 def load_library(filepath)
 # code goes here
 
-list = YAML.load_file(filepath)
-new_hash = {"get_meaning" => {},"get_emoticon" => {}}
-emoticons.each do |english, emoji|
-  emoji.each do |x|
-    hash["get_meaning"][x] = english
-    hash["get_emoticon"][x] = emoji[1]
+  list = YAML.load_file(filepath)
+  new_hash = {"get_meaning" => {},"get_emoticon" => {}}
+  list.each do |english, emoji|
+    emoji.each do |x|
+      hash["get_meaning"][x] = english
+      hash["get_emoticon"][x] = emoji[1]
+    end
   end
-end
 end
 
 # def get_japanese_emoticon
