@@ -42,12 +42,12 @@ def get_english_meaning(filepath, emoticon)
   end
 end
 
-def get_english_meaning (file_path, emoji)
+def get_english_meaning (file_path, emoticon)
   # code goes here
   new_hash =  load_library(file_path)
-  translate = new_hash["get_meaning"][emoji]
- if definition == nil
-  return "Sorry, that emoticon was not found"
-end
-definition
+  translate_ = new_hash["get_meaning"][emoticon]
+  if translate_ == nil
+    return "Sorry, that emoticon was not found"
+  end
+  translate_
 end
